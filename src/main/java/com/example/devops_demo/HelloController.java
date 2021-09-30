@@ -8,6 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello(){
+        System.out.println("test");
         Calc calc = new Calc();
         long result = calc.add(10, 20);
         
