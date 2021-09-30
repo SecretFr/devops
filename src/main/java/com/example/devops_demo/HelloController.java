@@ -8,6 +8,9 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello(){
-        return "Welcome to Simple Ecommerce ver 1.0";
+        Calc calc = new Calc();
+        long result = calc.add(10, 20);
+        
+        return "Welcome to Simple Ecommerce ver 1.0 (10 + 20 = " + result +")";
     }
 }
